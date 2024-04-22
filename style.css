@@ -41,8 +41,9 @@ body * {
 
 #container {
     padding: 0 24px;
-    width: 360px;
+    width: 100%;
     margin: auto;
+    max-width: 588px;
 }
 
 #profile img {
@@ -127,29 +128,56 @@ ul li a:hover {
     border: 1.5px solid var(--text-color);
 }
 
-#social-links ion-icon {
-    display: flex;
-    float: left;
-    margin-top: 16px;
-    margin-left: 2px;
-    padding: 25px;
-    font-size: 24px;
-}
+/* #social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+
+        transition: background 0.2s;
+        border-radius: 50%;
+      }
 
 #social-links * {
-    align-items: center;
-    justify-content: center;
-}
+        display: flex;
+        justify-content: center;
+      
+        padding: 24px 0;
+      
+        font-size: 24px;
+      }
 
 #social-links ion-icon:hover {
     background-color: var(--highlight-color);
     transition: background 0.2s;
     border-radius: 50%;
-}
+} */
+
+#social-links {
+    display: flex;
+    justify-content: center;
+  
+    padding: 24px 0 0 0;
+    font-size: 24px;
+  }
+  
+  #social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  
+    transition: background 0.2s;
+    border-radius: 50%;
+  }
+  
+  #social-links a:hover {
+    background: var(--highlight-color);
+  }
 
 footer {
     display: block;
-    padding-top: 80px;
+    padding-top: 0px;
     text-align: center;
     font-size: 14px;
-}
+} 
